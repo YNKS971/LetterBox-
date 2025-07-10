@@ -11,25 +11,29 @@ fetch("../dossier JSON/cinema.json")
 
 
         //    boucle pour generer des films
-        for (i=0; i<7; i++){
+        for (i=0; i<8; i++){
 
             // Le Inner HTML modifié
-        document.getElementById("filmAleatoire").innerHTML += `
-      <div class="col-7  col colonne-couleur " id="filmAleatoire"> 
-      <p>${data.results[i].title}</p>
-                      <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/${data.results[i].poster_path}" alt="Affiche du film">
-                       
-                      <p class="dateSortie"> ${data.results[i].release_date}</p>
-                      <p class ="voteCount> ${data.results[i].vote_count}"</p>
-                </div>
-      `
+     
+      document.getElementById("filmAleatoire").innerHTML += `
+<div class="card bg-dark text-white m-2" style="width: 12rem;">
+<img src="https://image.tmdb.org/t/p/w220_and_h330_face/${data.results[i].poster_path}" class="card-img-top" />
+<div class="card-body">
+<h6 class="card-title">${data.results[i].title}</h6>
+<p class="card-text">${data.results[i].release_date}</p>
+</div>
+</div>
+`;
 
-        document.getElementById("filmPerso").innerHTML += `
-   <div class="col-5 fs-2 " id="filmPerso">
-                    <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/${data.results[i].poster_path}" alt="Affiche du film">
-                    <p> ${data.results[i].vote_average}</p>
-                    <p> ${data.results[i].vote_count}</p>     
-                                `
+       document.getElementById("filmPerso").innerHTML += `
+<div class="card bg-dark text-white m-2" style="width: 12rem;">
+<img src="https://image.tmdb.org/t/p/w220_and_h330_face/${data.results[i].poster_path}" class="card-img-top" />
+<div class="card-body">
+<p class="card-text">${data.results[i].vote_average}</p>
+<p class="card-text">${data.results[i].vote_count}</p>
+</div>
+</div>
+`;
 
 
         document.getElementById("listeSuivi").innerHTML += `
