@@ -8,17 +8,19 @@ fetch("../dossier JSON/cinema.json")
 
       document.getElementById("Watch").innerHTML += `
 
-      <div class="col-5  text-white colonne-couleur  " id="Watch">
-                    <img src="" alt="Affiche du film"> Lorem ipsum dolor sit amet cA, eius?
-                    Where to stream
-                    Amazon
-                    Find on Amazon
-                    Watch trailer
-                    Share title
-                    Ignore
-                    IMDb
-                    Update history
-                    Suggest an edit
+      <div class="col-13  text-white colonne-couleur card bg-secondary rounded border border-danger style="width:20rem;" " id="Watch">
+                   <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/${data.results[0].poster_path}"
+                   
+                   
+                   <p> Where to stream </p>
+                    <p> Amazon </p>
+                  <p> Find on Amazon </p>
+                  <p>   Watch trailer </p>
+                   <p> Share title </p>
+                  <p>  Ignore </p>
+                   <p> IMDb </p>
+                   <p> Update history </p>
+                   <p> Suggest an edit </p>
 
 
                 </div>

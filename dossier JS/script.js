@@ -11,12 +11,13 @@ fetch("../dossier JSON/cinema.json")
 
 
         //    boucle pour generer des films
-        for (i=0; i<8; i++){
+        for (i=0; i<10; i++){
 
             // Le Inner HTML modifié
      
       document.getElementById("filmAleatoire").innerHTML += `
-<div class="card bg-dark text-white m-2" style="width: 12rem;">
+<div class="card bg-dark rounded text-white  m-2" style="width: 12rem;">
+// <a href="film.html? id="></a>
 <img src="https://image.tmdb.org/t/p/w220_and_h330_face/${data.results[i].poster_path}" class="card-img-top" />
 <div class="card-body">
 <h6 class="card-title">${data.results[i].title}</h6>
@@ -26,7 +27,7 @@ fetch("../dossier JSON/cinema.json")
 `;
 
        document.getElementById("filmPerso").innerHTML += `
-<div class="card bg-dark text-white m-2" style="width: 12rem;">
+<div class="card bg-dark text-white m-1" style="width: 12rem;">
 <img src="https://image.tmdb.org/t/p/w220_and_h330_face/${data.results[i].poster_path}" class="card-img-top" />
 <div class="card-body">
 <p class="card-text">${data.results[i].vote_average}</p>
@@ -49,11 +50,16 @@ fetch("../dossier JSON/cinema.json")
         }
     })
 
+    // Garder ce que met l'utilisateur et faire la recherche des films (donc faire une page exclusive a ca) =>
 
 
 
 
-// astuce clique sur ce que tu veux clic droit "copy path"
-// mettre api key dans const tt l tps
-// mettre la div changer les infos avec ${data. NOM DE CE QUE JE VISE}
-// POUR ICONE  
+
+
+    // Lier chaque film présent qui soit cliquable et dirige vers film.html => 
+    
+
+
+
+
