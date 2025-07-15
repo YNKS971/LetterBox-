@@ -10,55 +10,70 @@ fetch("../dossier JSON/cinema.json")
         console.log(data)
 
 
-        //    boucle pour generer des films
-        for (i=0; i<10; i++){
+        //    boucle pour generer des films (filmPerso)
+        for (i = 0; i < 8; i++) {
+
 
             // Le Inner HTML modifié
-     
-      document.getElementById("filmAleatoire").innerHTML += `
+
+            document.getElementById("filmAleatoire").innerHTML += `
 <div class="card bg-dark rounded text-white  m-2" style="width: 12rem;">
-// <a href="film.html? id="></a>
-<img src="https://image.tmdb.org/t/p/w220_and_h330_face/${data.results[i].poster_path}" class="card-img-top" />
+<a href="film.html? id=${data.results[i].id}">  <img src="https://image.tmdb.org/t/p/w220_and_h330_face/${data.results[i].poster_path}" class="card-img-top" />                              </a>
+
 <div class="card-body">
 <h6 class="card-title">${data.results[i].title}</h6>
 <p class="card-text">${data.results[i].release_date}</p>
 </div>
 </div>
-`;
+`
+ }
 
-       document.getElementById("filmPerso").innerHTML += `
+//  boucle pour FilmPerso: 
+for (pers=13; pers >9; pers--){ 
+
+
+
+
+            document.getElementById("filmPerso").innerHTML += `
 <div class="card bg-dark text-white m-1" style="width: 12rem;">
-<img src="https://image.tmdb.org/t/p/w220_and_h330_face/${data.results[i].poster_path}" class="card-img-top" />
+<a href="film.html? id=">
+<img src="https://image.tmdb.org/t/p/w220_and_h330_face/${data.results[pers].poster_path}" class="card-img-top" /> </a>
 <div class="card-body">
-<p class="card-text">${data.results[i].vote_average}</p>
-<p class="card-text">${data.results[i].vote_count}</p>
+<p class="card-text">${data.results [pers].vote_average} </p>
+
+
 </div>
 </div>
-`;
+`
+}
+
+for (fin=19; fin>11; fin--){ 
 
 
-        document.getElementById("listeSuivi").innerHTML += `
- 
-<div class="col-7 " id="listeSuivi">
-                        <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/${data.results[i].poster_path}" alt="AfficheDuFilm">
-                        
+            document.getElementById("listeSuivi").innerHTML += `
+<div class="card bg-dark text-white m-1  " style="width: 12.3rem;  ">
+<a href="film.html? id=">
+<img src="https://image.tmdb.org/t/p/w220_and_h330_face/${data.results[fin].poster_path}" class="card-img-top" /> </a>
 
 
-                    </div>
-                `
-            
-        }
+</div>
+</div>
+
+`
+}
+
+       
     })
 
-    // Garder ce que met l'utilisateur et faire la recherche des films (donc faire une page exclusive a ca) =>
 
 
 
 
 
 
-    // Lier chaque film présent qui soit cliquable et dirige vers film.html => 
-    
+
+
+
 
 
 

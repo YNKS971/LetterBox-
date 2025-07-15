@@ -13,18 +13,18 @@
 <body>
     <div class="container-fluid border border-danger px-0 ">
 
-        <nav class="navbar navbar-expand-lg navbar-custom border border-black ">
+        <nav class="navbar navbar-expand-lg navbar-custom border border-black text-center">
             <div class="container-fluid">
                  <img src="assets/4B857EB2-8CF4-4C94-9463-BD7C6FFC0E93.png" alt="Bootstrap" width="100" height="80">
     </a>
                 <a class="navbar-brand ml-1 text-uppercase fs-1 text-white " href="#">Gorilla</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Rechercher votre film.."
+                    <input class="form-control me-2 ms-5" type="search" placeholder="Rechercher votre film.."
                         aria-label="Search" />
                     <button class="btn btn-outline-success me-3" type="submit">Rechercher</button>
                 </form>
@@ -75,19 +75,19 @@
                             </ul>
                         </li>
 
-                        <div class="petitTiret">
+                        <!-- <div class="petitTiret">
                             
 
-                        </div>
+                        </div> -->
 
                         <li class="nav-item me-3">
-                            <a class="nav-link active text-white  " aria-current="page" href="#">Se connecter </a>
+                            <a class="nav-link active text-white ms-5  " aria-current="page" href="#">Se connecter </a>
                         </li>
 
 
 
                         <li class="nav-item me-3">
-                            <a class="nav-link active text-white  " aria-current="page" href="#">S'inscrire </a>
+                            <a class="nav-link active text-white ms-5 " aria-current="page" href="#">S'inscrire </a>
                         </li>
 
 
@@ -103,7 +103,9 @@
             <div class="row">
 
                 <div class="col-5 fs-1  text-white colonne-couleur  ">
-                    <p class="addictScroll"> Arrete de scroller <br> Regarde des films </p>
+                       <div class="vide"> </div>
+
+                    <h2 class="addictScroll fs-1"> Arrete de scroller <br> Regarde des films </h2>
                     <p class="phrase"> Des films personnalisées rien que pour toi </p>
                     <input class="form-control me-2" type="search" placeholder="Ton adresse e-mail"
                         aria-label="Search" /> _________________________________________________
@@ -123,7 +125,7 @@
         <div class="row align-items-start text-center">
 
 
-            <div class="row align-items-start text-center">
+            <div class="row align-items-start text-center ">
 
                 <div class="col-md-3  col colonne-couleur">
                     <div class="description text-white ">
@@ -163,27 +165,27 @@
             <div class="container ">
                 <div class="row">
 
-                    <div class="col-5 fs-2 d-flex flex-wrap gap-3 " id="filmPerso">
+                    <div class="col-5 fs-2 d-flex flex-wrap gap-3 colonne-couleur " id="filmPerso">
                     <img >
                     <p> </p>
                     <p></p>
 
                     </div>
-                    <div class="col-7 ">
-
-                        <h2 class="titreNote"> Explorez vos choix de films et séries personnalisés </h2>
-                        <p class="noteParagraphe"> L'algorithme de Gorilla compare vos goûts à ceux d'autres
+                    <div class="col-7 colonne-couleur ">
+                           <div class="vide"> </div>
+                        <h2 class="titreNote text-white "> Explorez vos choix de films et séries personnalisés </h2>
+                        <p class="noteParagraphe text-white "> L'algorithme de Gorilla compare vos goûts à ceux d'autres
                             cinéphiles et fans de séries, puis établit des recommandations basées sur les utilisateurs
                             dont les goûts sont les plus compatibles avec les vôtres.
                             C'est une méthode incroyablement précise pour prédire votre prochain coup de cœur.</p>
-                        <p class="liste">
+                        <p class="liste text-white">
                             
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
   <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
 </svg>
                             Commencez à recevoir des recommandations après avoir évalué seulement dix
                             titres.</p>
-                        <p class="liste"> 
+                        <p class="liste text-white"> 
                             
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
   <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
@@ -191,7 +193,7 @@
                             Trouvez d'autres utilisateurs qui ont les mêmes goûts que vous et découvrez
                             leurs autres
                             coups de cœur.</p>
-                        <p class="liste">
+                        <p class="liste text-white">
                             
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
   <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
@@ -199,7 +201,7 @@
                             Obtenez des notes probables précises pour les titres que vous n'avez pas
                             encore regardés.
                         </p>
-                        <p class="liste"> 
+                        <p class="liste text-white"> 
                             
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
   <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0"/>
@@ -213,13 +215,20 @@
             </div>
 <div class="container text-center ">
   <div class="row align-items-start">
-    <div class="col border border-danger text-white colonne-couleur fs-2">
+    <div class="col border border-danger text-black  fs-2 p-5 bg-white ">
+
       Une petite pause? 
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-video-off" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10.961 12.365a2 2 0 0 0 .522-1.103l3.11 1.382A1 1 0 0 0 16 11.731V4.269a1 1 0 0 0-1.406-.913l-3.111 1.382A2 2 0 0 0 9.5 3H4.272l.714 1H9.5a1 1 0 0 1 1 1v6a1 1 0 0 1-.144.518zM1.428 4.18A1 1 0 0 0 1 5v6a1 1 0 0 0 1 1h5.014l.714 1H2a2 2 0 0 1-2-2V5c0-.675.334-1.272.847-1.634zM15 11.73l-3.5-1.555v-4.35L15 4.269zm-4.407 3.56-10-14 .814-.58 10 14z"/>
+</svg>
+
+
     </div>
             <div class="container ">
                 <div class="row">
 
-                    <div class="col-5   ">.
+                    <div class="col-5 text-white colonne-couleur  ">
+                        <div class="vide"> </div>
                         <h2 class="titreNote"> Suivez vos visionnages et créez des collections illimitées </h2>
                         <p class="noteParagraphe">Le site regorge de fonctionnalités pour organiser vos recommandations et vous permet de découvrir encore plus de titres. </p>
                         <p class="liste"> 
@@ -256,33 +265,43 @@
                         <button type="button" class="btn btn-outline-danger btn-lg ">Commence ta collection</button>
 
                     </div>
-                    <div class="col-7 " id="listeSuivi">
+
+                        <div class="col-7  col colonne-couleur text-white d-flex flex-wrap gap-2 " id="listeSuivi"> 
+                      <img>
+                      <p>  </p>
+                      <p> </p>
+                      <p> </p>
+                </div>
+            </div>
+        </div>
+
+                    <!-- <div class="col-7 colonne-couleur " id="listeSuivi">
                         <img src="" alt="">
                         
 
 
-                    </div>
+                    </div> -->
 
                 </div>
 
             </div>
 
-            <div class="container text-center">
+            <!-- <div class="container text-center text-white">
   <div class="row align-items-end">
-    <div class="col border border-black">
-        <img src="assets/4B857EB2-8CF4-4C94-9463-BD7C6FFC0E93.png " alt="Bootstrap" width="100" height="80"> GORILLA
-        <p> Recommandations de films et d'émissions de télévision ultra-précises    </p>
-        <p class="petitePhrase">210005 de critiques et de votes </p>
+    <div class="col finisher ">
+       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum minus, facere animi sequi tempore impedit iusto reprehenderit, repellendus vel quibusdam deserunt perferendis eligendi unde reiciendis error, hic fuga suscipit quae.PEPE CHCIKEN Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magnam unde, optio sed soluta eos illum aut earum, exercitationem velit beatae? Voluptatibus nesciunt laboriosam praesentium consectetur est voluptatem id non?  </p> 
+     
+
 
     </div>
-    <div class="col border border-danger">
-    © 2025 GORILLA LLC. All Rights Reserved.
+    <div class="col finisher text-white">
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum harum nulla molestias dicta provident tempora explicabo ipsa, corrupti cum reprehenderit? Consectetur aliquam, assumenda molestiae labore nihil corporis harum tempora quis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo architecto sit ullam consequatur nostrum perferendis, debitis dolor ipsum veritatis quibusdam reiciendis corrupti error sint, officiis voluptates. Dolorem, commodi! Nam, minus!</p>
     </div>
-    <div class="col border border-primary">
-     Contact US 
+    <div class="col finisher text-white">
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint ratione beatae voluptatibus enim eaque doloremque, perferendis ducimus voluptates iste. Porro reiciendis odit quod perspiciatis odio ex, quam cumque dignissimos ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, recusandae cumque? Eaque obcaecati pariatur harum quas alias kodak black voluptatum ad eius, impedit sunt, id tempora! Tempora voluptatibus officiis commodi similique excepturi?</p>
     </div>
   </div>
-</div>
+</div> -->
 
 
 

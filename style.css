@@ -27,8 +27,32 @@
 .petitTiret{
     border:solid gray;
     
+    
 }
 
 svg{
     color:#6A4DFF;
+}
+
+.vide{
+    height: 10rem;
+}
+
+
+.finisher{
+    background-color: #111217;
+}
+
+.sypno{
+    color: aquamarine;
+    font-size:x-large
+}
+
+.seance{
+    font-size: x-large;
+    color:crimson
+}
+
+.addictScroll{
+  
 }
